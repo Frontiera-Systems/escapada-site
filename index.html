@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Escapada — ekosystem edukacji cyber-fizycznej łączący modułowe roboty, inteligentnych agentów, symulację i materiały dydaktyczne." />
+  <meta name="theme-color" content="#07111f" />
+  <title>Escapada — Cyber-Physical Learning Ecosystem</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Escapada — strona główna">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img">
+            <path d="M9 14.5 24 6l15 8.5v19L24 42 9 33.5z" />
+            <circle cx="18" cy="24" r="3.3" />
+            <circle cx="30" cy="24" r="3.3" />
+            <path d="M18 31h12" />
+          </svg>
+        </span>
+        <span>Escapada</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Otwórz menu</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Główna nawigacja">
+        <a href="#ecosystem">Ekosystem</a>
+        <a href="#escabot">Escabot</a>
+        <a href="#missions">Misje</a>
+        <a href="#audience">Dla kogo</a>
+        <a href="#status">Status</a>
+        <a class="nav-cta" href="#contact">Porozmawiajmy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-grid container">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">Cyber-Physical Learning Ecosystem</div>
+          <h1>Budujemy inteligentne maszyny.<br><span>Uczymy, jak działają całe systemy.</span></h1>
+          <p class="hero-lead">
+            Escapada łączy modułowe roboty, agentów AI, symulację i gotowe scenariusze dydaktyczne
+            w jednym środowisku do nauki, badań i eksperymentowania.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#ecosystem">Poznaj Escapadę</a>
+            <a class="button button-secondary" href="#contact">Zaproponuj pilotaż</a>
+          </div>
+          <div class="hero-proof" aria-label="Główne obszary Escapady">
+            <span>Robotyka</span>
+            <span>AI</span>
+            <span>Systemy wieloagentowe</span>
+            <span>Digital Twin</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Wizualizacja ekosystemu Escapada">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+
+          <div class="robot-card glass">
+            <div class="robot-top">
+              <span class="status-dot"></span>
+              <span>ESCABOT CORE</span>
+              <span class="battery">87%</span>
+            </div>
+
+            <svg class="robot-illustration" viewBox="0 0 460 300" aria-hidden="true">
+              <defs>
+                <linearGradient id="bodyGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#8cf7df"/>
+                  <stop offset="100%" stop-color="#4a78ff"/>
+                </linearGradient>
+                <filter id="shadow">
+                  <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#02060d" flood-opacity=".5"/>
+                </filter>
+              </defs>
+              <ellipse cx="230" cy="258" rx="138" ry="19" fill="#020711" opacity=".7"/>
+              <g filter="url(#shadow)">
+                <rect x="125" y="104" width="210" height="112" rx="34" fill="#111d30" stroke="#315172" stroke-width="2"/>
+                <rect x="144" y="121" width="172" height="76" rx="23" fill="url(#bodyGradient)" opacity=".18"/>
+                <circle cx="183" cy="159" r="20" fill="#07111f" stroke="#8cf7df" stroke-width="4"/>
+                <circle cx="277" cy="159" r="20" fill="#07111f" stroke="#8cf7df" stroke-width="4"/>
+                <circle cx="183" cy="159" r="7" fill="#8cf7df"/>
+                <circle cx="277" cy="159" r="7" fill="#8cf7df"/>
+                <rect x="201" y="184" width="58" height="7" rx="3.5" fill="#4a78ff"/>
+                <rect x="177" y="77" width="106" height="36" rx="17" fill="#15263e" stroke="#315172" stroke-width="2"/>
+                <circle cx="230" cy="95" r="9" fill="#8cf7df"/>
+                <path d="M230 77V52" stroke="#8cf7df" stroke-width="4" stroke-linecap="round"/>
+                <circle cx="230" cy="47" r="6" fill="#4a78ff"/>
+                <circle cx="133" cy="215" r="36" fill="#07111f" stroke="#315172" stroke-width="8"/>
+                <circle cx="327" cy="215" r="36" fill="#07111f" stroke="#315172" stroke-width="8"/>
+              </g>
+              <g fill="none" stroke="#8cf7df" stroke-width="2" opacity=".7">
+                <path d="M48 110h48l22 19"/>
+                <path d="M364 86h45"/>
+                <path d="M347 229h65"/>
+              </g>
+              <g fill="#8cf7df">
+                <circle cx="48" cy="110" r="4"/>
+                <circle cx="409" cy="86" r="4"/>
+                <circle cx="412" cy="229" r="4"/>
+              </g>
+            </svg>
+
+            <div class="telemetry-grid">
+              <div><span>Tryb</span><strong>Explorer</strong></div>
+              <div><span>Łączność</span><strong>MQTT / Wi-Fi</strong></div>
+              <div><span>Moduły</span><strong>Vision + ToF</strong></div>
+            </div>
+          </div>
+
+          <div class="floating-chip chip-one">Agent AI</div>
+          <div class="floating-chip chip-two">Vision</div>
+          <div class="floating-chip chip-three">Simulation</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <div class="container narrow reveal">
+        <div class="section-label">Dlaczego Escapada?</div>
+        <h2>Od pojedynczych technologii do kompletnego systemu cyber-fizycznego</h2>
+        <p>
+          Programowanie, elektronika, mechanika, komunikacja i sztuczna inteligencja są zwykle nauczane osobno.
+          Escapada łączy je w jeden proces: od zaprojektowania misji, przez budowę robota, po analizę zachowania
+          całego zespołu agentów.
+        </p>
+      </div>
+    </section>
+
+    <section class="section ecosystem" id="ecosystem">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-label">Architektura produktu</div>
+            <h2>Jeden ekosystem. Trzy nierozłączne filary.</h2>
+          </div>
+          <p>
+            Każda nowa funkcja programowa zwiększa możliwości sprzętu, a każdy moduł sprzętowy otwiera nowe
+            doświadczenia edukacyjne.
+          </p>
+        </div>
+
+        <div class="pillar-grid">
+          <article class="pillar-card reveal">
+            <div class="card-number">01</div>
+            <div class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 5h16v11H4zM8 20h8M12 16v4M7 9h4M7 12h8"/></svg>
+            </div>
+            <h3>Escapada Platform</h3>
+            <p>Cyfrowy mózg ekosystemu: agenci, scenariusze, symulacja, telemetria, sterowanie i analityka.</p>
+            <ul>
+              <li>Systemy wieloagentowe</li>
+              <li>Digital Twin</li>
+              <li>SDK i integracje</li>
+            </ul>
+          </article>
+
+          <article class="pillar-card featured reveal">
+            <div class="card-number">02</div>
+            <div class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 8h10l2 3v6H5v-6zM9 8V5h6v3M8 17v2M16 17v2M8 12h.01M16 12h.01"/></svg>
+            </div>
+            <h3>Escabot Ecosystem</h3>
+            <p>Rodzina modułowych robotów, czujników, manipulatorów, stacji i aktywnych artefaktów.</p>
+            <ul>
+              <li>Konfigurowalne role</li>
+              <li>Wymienne moduły</li>
+              <li>Fizyczne eksperymenty</li>
+            </ul>
+          </article>
+
+          <article class="pillar-card reveal">
+            <div class="card-number">03</div>
+            <div class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m4 7 8-4 8 4-8 4zM6 10v5l6 3 6-3v-5M20 7v6"/></svg>
+            </div>
+            <h3>Escapada Academy</h3>
+            <p>Laboratoria, ścieżki dydaktyczne, scenariusze zajęć oraz materiały dla studentów i prowadzących.</p>
+            <ul>
+              <li>Gotowe misje</li>
+              <li>Materiały dydaktyczne</li>
+              <li>Wyniki i kryteria oceny</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-label">Proces pracy</div>
+            <h2>Od pomysłu do działającej maszyny</h2>
+          </div>
+        </div>
+        <div class="process-track">
+          <article class="process-step reveal"><span>01</span><h3>Zaprojektuj misję</h3><p>Określ cele, środowisko, ograniczenia i warunki sukcesu.</p></article>
+          <article class="process-step reveal"><span>02</span><h3>Zbuduj Escabota</h3><p>Dobierz sensory, komunikację, zasilanie i moduły wykonawcze.</p></article>
+          <article class="process-step reveal"><span>03</span><h3>Zaprogramuj zachowanie</h3><p>Zdefiniuj strategie, role i współpracę agentów.</p></article>
+          <article class="process-step reveal"><span>04</span><h3>Przetestuj w symulacji</h3><p>Zweryfikuj algorytmy przed uruchomieniem sprzętu.</p></article>
+          <article class="process-step reveal"><span>05</span><h3>Uruchom fizycznie</h3><p>Obserwuj wpływ rzeczywistych ograniczeń na system.</p></article>
+          <article class="process-step reveal"><span>06</span><h3>Analizuj</h3><p>Porównuj strategie, konfiguracje i wyniki eksperymentu.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section escabot-section" id="escabot">
+      <div class="container split">
+        <div class="split-copy reveal">
+          <div class="section-label">Escabot Ecosystem</div>
+          <h2>Robot, którego się nie tylko programuje</h2>
+          <p>
+            Escabot ma być modułową platformą badawczą. Użytkownik wybiera nie tylko algorytm, ale projektuje
+            kompletną inteligentną maszynę dopasowaną do misji.
+          </p>
+          <div class="feature-list">
+            <div><strong>Role fizyczne</strong><span>Explorer, Carrier, Observer, Communicator</span></div>
+            <div><strong>Automatyczne wykrywanie</strong><span>Robot rozpoznaje podłączone moduły i udostępnia ich możliwości.</span></div>
+            <div><strong>Otwarte interfejsy</strong><span>Integracja nowych sensorów, manipulatorów i platform obliczeniowych.</span></div>
+          </div>
+        </div>
+
+        <div class="module-board reveal">
+          <div class="module-center">
+            <span>ESCABOT</span>
+            <strong>CORE</strong>
+          </div>
+          <div class="module-node node-1">Vision</div>
+          <div class="module-node node-2">LiDAR</div>
+          <div class="module-node node-3">Grabber</div>
+          <div class="module-node node-4">Voice</div>
+          <div class="module-node node-5">UWB</div>
+          <div class="module-node node-6">Edge AI</div>
+          <svg viewBox="0 0 500 500" aria-hidden="true">
+            <g stroke="currentColor" stroke-width="2" fill="none" opacity=".35">
+              <path d="M250 250 103 120M250 250 397 120M250 250 442 271M250 250 360 421M250 250 137 421M250 250 58 271"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section missions" id="missions">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-label">Nauka poprzez działanie</div>
+            <h2>Misje nadają technologii konkretny cel</h2>
+          </div>
+          <p>Zamiast osobnych demonstracji — problemy wymagające współpracy sprzętu, oprogramowania i zespołu.</p>
+        </div>
+
+        <div class="mission-grid">
+          <article class="mission-card mission-rescue reveal">
+            <div class="mission-tag">Rescue</div>
+            <h3>Eksploracja nieznanego obszaru</h3>
+            <p>Zespół robotów dzieli teren, wykrywa zagrożenia i przekazuje informacje pozostałym agentom.</p>
+          </article>
+          <article class="mission-card mission-factory reveal">
+            <div class="mission-tag">Factory</div>
+            <h3>Inteligentna linia produkcyjna</h3>
+            <p>Escaboty transportują elementy, współpracują z artefaktami i reagują na awarie procesu.</p>
+          </article>
+          <article class="mission-card mission-space reveal">
+            <div class="mission-tag">Space</div>
+            <h3>Autonomiczna baza marsjańska</h3>
+            <p>Roboty wykonują pomiary, zarządzają energią i realizują zadania w warunkach ograniczonej łączności.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section audience" id="audience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-label">Zastosowania</div>
+            <h2>Dla edukacji, badań i interdyscyplinarnych zespołów</h2>
+          </div>
+        </div>
+        <div class="audience-tabs" role="tablist" aria-label="Grupy odbiorców">
+          <button class="tab-button active" role="tab" aria-selected="true" aria-controls="students-panel" id="students-tab" data-tab="students">Studenci</button>
+          <button class="tab-button" role="tab" aria-selected="false" aria-controls="teachers-panel" id="teachers-tab" data-tab="teachers">Prowadzący</button>
+          <button class="tab-button" role="tab" aria-selected="false" aria-controls="research-panel" id="research-tab" data-tab="research">Badacze</button>
+          <button class="tab-button" role="tab" aria-selected="false" aria-controls="clubs-panel" id="clubs-tab" data-tab="clubs">Koła naukowe</button>
+        </div>
+
+        <div class="tab-panels reveal">
+          <div class="tab-panel active" id="students-panel" role="tabpanel" aria-labelledby="students-tab">
+            <div><span>01</span><h3>Buduj kompletne systemy</h3><p>Łącz mechanikę, elektronikę, kod, AI i analizę danych w jednym projekcie.</p></div>
+            <div><span>02</span><h3>Obserwuj rezultaty</h3><p>Każda decyzja algorytmu prowadzi do widocznego działania fizycznego robota.</p></div>
+            <div><span>03</span><h3>Ucz się kompromisów</h3><p>Analizuj wpływ energii, masy, opóźnień i niedokładności sensorów.</p></div>
+          </div>
+          <div class="tab-panel" id="teachers-panel" role="tabpanel" aria-labelledby="teachers-tab" hidden>
+            <div><span>01</span><h3>Gotowe laboratoria</h3><p>Korzystaj z misji, materiałów, kodu startowego i kryteriów oceny.</p></div>
+            <div><span>02</span><h3>Stopniuj trudność</h3><p>Od gotowej konfiguracji po samodzielny projekt robota i strategii.</p></div>
+            <div><span>03</span><h3>Śledź eksperyment</h3><p>Analizuj telemetrię, zdarzenia, decyzje agentów i wyniki zespołów.</p></div>
+          </div>
+          <div class="tab-panel" id="research-panel" role="tabpanel" aria-labelledby="research-tab" hidden>
+            <div><span>01</span><h3>Powtarzalne scenariusze</h3><p>Porównuj strategie w kontrolowanym środowisku fizycznym i cyfrowym.</p></div>
+            <div><span>02</span><h3>Systemy wieloagentowe</h3><p>Badaj koordynację, odporność, zachowania emergentne i sim-to-real.</p></div>
+            <div><span>03</span><h3>Otwarte integracje</h3><p>Podłączaj własne modele, urządzenia i narzędzia analityczne.</p></div>
+          </div>
+          <div class="tab-panel" id="clubs-panel" role="tabpanel" aria-labelledby="clubs-tab" hidden>
+            <div><span>01</span><h3>Wspólny fundament</h3><p>Każdy członek zespołu rozwija inny element tego samego systemu.</p></div>
+            <div><span>02</span><h3>Konkursy i wyzwania</h3><p>Buduj własne Escaboty, misje i strategie współpracy.</p></div>
+            <div><span>03</span><h3>Portfolio projektowe</h3><p>Prezentuj działające rozwiązania łączące wiele dziedzin inżynierii.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section status-section" id="status">
+      <div class="container split status-grid">
+        <div class="split-copy reveal">
+          <div class="section-label">Status projektu</div>
+          <h2>Działający prototyp. Ambitna architektura. Iteracyjny rozwój.</h2>
+          <p>
+            Escapada posiada już fundament programowy do zarządzania agentami, robotami, scenariuszami,
+            telemetrią, planowaniem ruchu i wizją komputerową. Kolejnym etapem jest referencyjny Escabot
+            oraz pierwszy zestaw Developer Kit.
+          </p>
+          <a class="text-link" href="#contact">Dołącz do rozmowy o kierunku rozwoju <span>→</span></a>
+        </div>
+
+        <div class="roadmap reveal" aria-label="Najbliższe etapy projektu">
+          <div class="roadmap-item done"><span></span><div><small>Fundament</small><strong>Platforma i prototyp scenariusza</strong></div></div>
+          <div class="roadmap-item current"><span></span><div><small>Teraz</small><strong>Escabot Core i standard modułów</strong></div></div>
+          <div class="roadmap-item"><span></span><div><small>Następnie</small><strong>Developer Kit i pełna symulacja</strong></div></div>
+          <div class="roadmap-item"><span></span><div><small>Pilotaż</small><strong>Escapada Academy i partnerzy akademiccy</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <div class="section-label">Współpraca</div>
+          <h2>Pomóż zbudować nowy model edukacji cyber-fizycznej</h2>
+          <p>
+            Szukamy nauczycieli akademickich, badaczy, konstruktorów, opiekunów kół naukowych
+            i partnerów technologicznych zainteresowanych wspólnym pilotażem.
+          </p>
+          <ul class="contact-points">
+            <li>Walidacja potrzeb dydaktycznych</li>
+            <li>Projektowanie sprzętu i modułów</li>
+            <li>Scenariusze badawcze i laboratoryjne</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label>
+            Imię i nazwisko
+            <input type="text" name="name" autocomplete="name" placeholder="Jan Kowalski" required />
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" autocomplete="email" placeholder="jan@uczelnia.pl" required />
+          </label>
+          <label>
+            Organizacja
+            <input type="text" name="organization" autocomplete="organization" placeholder="Uczelnia, firma lub koło naukowe" />
+          </label>
+          <label>
+            O czym chcesz porozmawiać?
+            <textarea name="message" rows="4" placeholder="Opisz pomysł na pilotaż lub obszar współpracy." required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Wyślij wiadomość</button>
+          <p class="form-note">To formularz demonstracyjny. Po wdrożeniu należy podłączyć usługę obsługi formularzy.</p>
+          <div class="form-success" role="status" aria-live="polite" hidden>
+            Dziękujemy — formularz działa w trybie demonstracyjnym.
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="container reveal">
+        <p>Buduj. Programuj. Eksperymentuj. Analizuj.</p>
+        <h2>Zobacz, jak inteligencja działa w świecie fizycznym.</h2>
+        <a class="button button-light" href="#top">Wróć na początek</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48"><path d="M9 14.5 24 6l15 8.5v19L24 42 9 33.5z"/><circle cx="18" cy="24" r="3.3"/><circle cx="30" cy="24" r="3.3"/><path d="M18 31h12"/></svg>
+          </span>
+          <span>Escapada</span>
+        </a>
+        <p>Ekosystem edukacji cyber-fizycznej.</p>
+      </div>
+      <div>
+        <strong>Ekosystem</strong>
+        <a href="#ecosystem">Platforma</a>
+        <a href="#escabot">Escabot</a>
+        <a href="#missions">Misje</a>
+      </div>
+      <div>
+        <strong>Projekt</strong>
+        <a href="#audience">Zastosowania</a>
+        <a href="#status">Status</a>
+        <a href="#contact">Współpraca</a>
+      </div>
+      <div>
+        <strong>Kontakt</strong>
+        <a href="mailto:kontakt@escapada.example">kontakt@escapada.example</a>
+        <span>LinkedIn — do uzupełnienia</span>
+        <span>GitHub — do uzupełnienia</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Escapada. Projekt w fazie rozwoju.</span>
+      <span>Prototype landing page</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
