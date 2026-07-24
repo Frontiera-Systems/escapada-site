@@ -49,14 +49,14 @@ h1, h2, h3 {
   line-height: 1.08;
   letter-spacing: -.035em;
 }
-h1 { font-size: clamp(3.2rem, 7vw, 6.7rem); margin-bottom: 28px; }
+h1 { font-size: clamp(3rem, 5vw, 4rem); margin-bottom: 28px; }
 h1 span {
   background: linear-gradient(100deg, var(--primary), #9cb8ff 55%, var(--primary-2));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-h2 { font-size: clamp(2.25rem, 4.8vw, 4.4rem); margin-bottom: 24px; }
+h2 { font-size: clamp(2rem, 4vw, 3.3rem); margin-bottom: 24px; }
 h3 { font-size: 1.45rem; }
 p { color: var(--muted); }
 .skip-link {
