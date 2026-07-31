@@ -69,54 +69,14 @@
               <span class="battery">87%</span>
             </div>
 
-            <svg class="robot-illustration" viewBox="0 0 460 300" aria-hidden="true">
-              <defs>
-                <linearGradient id="bodyGradient" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#8cf7df"/>
-                  <stop offset="100%" stop-color="#4a78ff"/>
-                </linearGradient>
-                <filter id="shadow">
-                  <feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#02060d" flood-opacity=".5"/>
-                </filter>
-              </defs>
-              <ellipse cx="230" cy="258" rx="138" ry="19" fill="#020711" opacity=".7"/>
-              <g filter="url(#shadow)">
-                <rect x="125" y="104" width="210" height="112" rx="34" fill="#111d30" stroke="#315172" stroke-width="2"/>
-                <rect x="144" y="121" width="172" height="76" rx="23" fill="url(#bodyGradient)" opacity=".18"/>
-                <circle cx="183" cy="159" r="20" fill="#07111f" stroke="#8cf7df" stroke-width="4"/>
-                <circle cx="277" cy="159" r="20" fill="#07111f" stroke="#8cf7df" stroke-width="4"/>
-                <circle cx="183" cy="159" r="7" fill="#8cf7df"/>
-                <circle cx="277" cy="159" r="7" fill="#8cf7df"/>
-                <rect x="201" y="184" width="58" height="7" rx="3.5" fill="#4a78ff"/>
-                <rect x="177" y="77" width="106" height="36" rx="17" fill="#15263e" stroke="#315172" stroke-width="2"/>
-                <circle cx="230" cy="95" r="9" fill="#8cf7df"/>
-                <path d="M230 77V52" stroke="#8cf7df" stroke-width="4" stroke-linecap="round"/>
-                <circle cx="230" cy="47" r="6" fill="#4a78ff"/>
-                <circle cx="133" cy="215" r="36" fill="#07111f" stroke="#315172" stroke-width="8"/>
-                <circle cx="327" cy="215" r="36" fill="#07111f" stroke="#315172" stroke-width="8"/>
-              </g>
-              <g fill="none" stroke="#8cf7df" stroke-width="2" opacity=".7">
-                <path d="M48 110h48l22 19"/>
-                <path d="M364 86h45"/>
-                <path d="M347 229h65"/>
-              </g>
-              <g fill="#8cf7df">
-                <circle cx="48" cy="110" r="4"/>
-                <circle cx="409" cy="86" r="4"/>
-                <circle cx="412" cy="229" r="4"/>
-              </g>
-            </svg>
+            <img class="robot-illustration" src="robot.png" alt="" aria-hidden="true">
 
             <div class="telemetry-grid">
               <div><span>Tryb</span><strong>Explorer</strong></div>
               <div><span>Łączność</span><strong>MQTT / Wi-Fi</strong></div>
-              <div><span>Moduły</span><strong>Vision + ToF</strong></div>
+              <div><span>Moduły</span><strong>AprilTag</strong></div>
             </div>
           </div>
-
-          <div class="floating-chip chip-one">Agent AI</div>
-          <div class="floating-chip chip-two">Vision</div>
-          <div class="floating-chip chip-three">Simulation</div>
         </div>
       </div>
     </section>
