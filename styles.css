@@ -124,9 +124,6 @@ p { color: var(--muted); }
 .telemetry-grid div { background: rgba(255,255,255,.74); border: 1px solid var(--line); border-radius: 14px; padding: 12px; }
 .telemetry-grid span { display: block; color: #67788c; font-size: .68rem; }
 .telemetry-grid strong { font-size: .77rem; }
-.orbit { position: absolute; border: 1px solid rgba(0,127,115,.16); border-radius: 50%; }
-.orbit-one { width: 560px; height: 560px; animation: spin 28s linear infinite; }
-.orbit-two { width: 430px; height: 430px; border-style: dashed; animation: spinReverse 22s linear infinite; }
 .floating-chip { position: absolute; z-index: 5; border: 1px solid rgba(0,127,115,.25); background: rgba(255,255,255,.9); border-radius: 999px; padding: 8px 14px; color: var(--primary); font-size: .72rem; font-weight: 600; box-shadow: 0 10px 30px rgba(24,44,70,.14); }
 .chip-one { top: 14%; right: 0; }
 .chip-two { bottom: 16%; left: -2%; }
@@ -274,8 +271,6 @@ p { color: var(--muted); }
   .robot-card { padding: 14px; }
   .telemetry-grid { grid-template-columns: 1fr; }
   .telemetry-grid div:nth-child(n+2) { display: none; }
-  .orbit-one { width: 400px; height: 400px; }
-  .orbit-two { width: 320px; height: 320px; }
   .floating-chip { display: none; }
   .process-track { grid-template-columns: 1fr; }
   .process-step, .process-step:nth-child(3n), .process-step:nth-child(2n), .process-step:nth-child(n+4), .process-step:nth-child(n+5) { border-right: 0; border-bottom: 1px solid var(--line); }
