@@ -3,21 +3,29 @@ const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.primary-nav');
 const navLinks = document.querySelectorAll('.primary-nav a');
 
-window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 20);
-});
+if (header) {
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 20);
+  });
+}
 
-menuToggle.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  document.body.classList.toggle('menu-open', open);
-  menuToggle.setAttribute('aria-expanded', String(open));
-});
+if (menuToggle && nav) {
+  menuToggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('open');
+    document.body.classList.toggle('menu-open', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+  });
+}
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    nav.classList.remove('open');
+    if (nav) {
+      nav.classList.remove('open');
+    }
     document.body.classList.remove('menu-open');
-    menuToggle.setAttribute('aria-expanded', 'false');
+    if (menuToggle) {
+      menuToggle.setAttribute('aria-expanded', 'false');
+    }
   });
 });
 
@@ -39,8 +47,10 @@ tabButtons.forEach(button => {
     button.setAttribute('aria-selected', 'true');
 
     const panel = document.getElementById(`${button.dataset.tab}-panel`);
-    panel.hidden = false;
-    requestAnimationFrame(() => panel.classList.add('active'));
+    if (panel) {
+      panel.hidden = false;
+      requestAnimationFrame(() => panel.classList.add('active'));
+    }
   });
 });
 
@@ -56,11 +66,17 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 const form = document.getElementById('contact-form');
-form.addEventListener('submit', event => {
-  event.preventDefault();
-  const success = form.querySelector('.form-success');
-  success.hidden = false;
-  form.reset();
-});
+if (form) {
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const success = form.querySelector('.form-success');
+    if (success) {
+      success.hidden = false;
+    }
+    form.reset();
+  });
+}
 
-document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('#year').forEach(year => {
+  year.textContent = new Date().getFullYear();
+});

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Escapada — ekosystem edukacji cyber-fizycznej łączący modułowe roboty, inteligentnych agentów, symulację i materiały dydaktyczne." />
+  <meta name="theme-color" content="#f6f9fc" />
+  <title>Współpraca — Escapada</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Escapada — strona główna">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="escapada_logo.png" alt="Escapada"/>
+        </span>
+        <span>Escapada</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Otwórz menu</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Główna nawigacja">
+        <a href="ecosystem.html">Ekosystem</a>
+        <a href="escabot.html">Escabot</a>
+        <a href="missions.html">Misje</a>
+        <a href="audience.html">Dla kogo</a>
+        <a href="status.html">Status</a>
+        <a href="questions.html">Pytania</a>
+        <a class="nav-cta" href="contact.html" aria-current="page">Porozmawiajmy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section contact" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <div class="section-label">Współpraca</div>
+          <h2>Buduj z nami nowy model edukacji cyber-fizycznej</h2>
+          <p>
+            Szukamy nauczycieli akademickich, badaczy, konstruktorów, opiekunów kół naukowych
+            i partnerów technologicznych zainteresowanych wspólnym pilotażem.
+          </p>
+          <ul class="contact-points">
+            <li>Walidacja potrzeb dydaktycznych</li>
+            <li>Projektowanie sprzętu i modułów</li>
+            <li>Scenariusze badawcze i laboratoryjne</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <label>
+            Imię i nazwisko
+            <input type="text" name="name" autocomplete="name" placeholder="Jan Kowalski" required />
+          </label>
+          <label>
+            E-mail
+            <input type="email" name="email" autocomplete="email" placeholder="jan@uczelnia.pl" required />
+          </label>
+          <label>
+            Organizacja
+            <input type="text" name="organization" autocomplete="organization" placeholder="Uczelnia, firma lub koło naukowe" />
+          </label>
+          <label>
+            O czym chcesz porozmawiać?
+            <textarea name="message" rows="4" placeholder="Opisz pomysł na pilotaż lub obszar współpracy." required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Wyślij wiadomość</button>
+          <p class="form-note">To formularz demonstracyjny. Po wdrożeniu należy podłączyć usługę obsługi formularzy.</p>
+          <div class="form-success" role="status" aria-live="polite" hidden>
+            Dziękujemy — formularz działa w trybie demonstracyjnym.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="escapada_logo.png" alt="" width="80" height="80" />
+          </span>
+          <span>Escapada</span>
+        </a>
+        <p>Ekosystem edukacji cyber-fizycznej.</p>
+      </div>
+      <div>
+        <strong>Ekosystem</strong>
+        <a href="ecosystem.html">Platforma</a>
+        <a href="escabot.html">Escabot</a>
+        <a href="missions.html">Misje</a>
+      </div>
+      <div>
+        <strong>Projekt</strong>
+        <a href="audience.html">Zastosowania</a>
+        <a href="status.html">Status</a>
+        <a href="questions.html">Pytania</a>
+        <a href="contact.html">Współpraca</a>
+      </div>
+      <div>
+        <strong>Kontakt</strong>
+        <a href="mailto:frontiera.systems@gmail.com">frontiera.systems@gmail.com</a>
+        <span>LinkedIn — TBD</span>
+        <span>GitHub — TBD</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Escapada. Projekt w fazie rozwoju.</span>
+      <span>Prototype landing page</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
