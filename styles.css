@@ -10,7 +10,6 @@
   --line: rgba(16,42,67,.14);
   --primary: #0077d1;
   --primary-2: #87cefa;
-  --accent: #c98313;
   --dark-text: #07111f;
   --radius: 26px;
   --shadow: 0 24px 70px rgba(24,44,70,.14);
@@ -311,13 +310,12 @@ p { color: var(--muted); }
   gap: 18px;
   align-items: start;
   margin-top: 34px;
-  border: 1px solid rgba(201,131,19,.2);
+  border: 1px solid rgba(254,119,19,.2);
   border-radius: var(--radius);
   padding: 24px 28px;
-  background: rgba(255,249,196,.38);
 }
-.parent-note strong {
-  color: var(--accent);
+.parent-note p:first-child {
+  color: var(--orange);
   white-space: nowrap;
 }
 .parent-note p {
@@ -331,7 +329,7 @@ p { color: var(--muted); }
 .roadmap-item { position: relative; display: flex; gap: 24px; padding: 0 0 40px; }
 .roadmap-item > span { position: absolute; left: -34px; top: 8px; width: 17px; height: 17px; border-radius: 50%; border: 3px solid var(--bg-soft); background: #aebccd; box-shadow: 0 0 0 1px var(--line); }
 .roadmap-item.done > span { background: var(--primary); }
-.roadmap-item.current > span { background: var(--accent); box-shadow: 0 0 24px rgba(201,131,19,.26); }
+.roadmap-item.current > span { background: var(--orange); box-shadow: 0 0 24px rgba(201,131,19,.26); }
 .roadmap-item small, .roadmap-item strong { display: block; }
 .roadmap-item small { color: var(--primary); font-weight: 600; text-transform: uppercase; letter-spacing: .1em; }
 .roadmap-item strong { font-size: 1.05rem; margin-top: 5px; }
